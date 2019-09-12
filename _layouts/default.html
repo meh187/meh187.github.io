@@ -46,7 +46,7 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ page.content }}
+      {{ page.content | default: page.description}}
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
